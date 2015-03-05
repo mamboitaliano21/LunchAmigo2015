@@ -1,0 +1,94 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <item name="android:windowBackground">@drawable/bg1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">#FFFFFF</item>
+        
+
+        
+    </style>
+    
+    <style name="ViewStyleMain" parent="AppTheme" >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+         <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:orientation">vertical</item>
+
+        
+    
+    </style>
+    <style name="EditTextStandard">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#E6E6E6</item>
+    </style>
+    
+    
+    <style name="TextViewStandard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        
+    </style>
+    
+    <style name="TextViewSmall" parent = "TextViewStandard" >
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    <style name="TextViewLarge" parent = "TextViewStandard" >
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+    
+    
+    
+    
+    <style name="Button">
+        <item name="android:background">@drawable/buttonshape</item>
+        <item name="android:shadowColor">#A8A8A8</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+         <item name="android:shadowRadius">5</item>
+        <item name="android:textColor">#E3E3E3</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    
+    
+    <style name="LinearLayoutVerticalStandard">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        
+    </style>
+    
+    
+    
+    
+
+
+    <color name="black">#000000</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+
+    
+    <style name="boldText">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="normalText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#C0C0C0</item>
+    </style>
+</resources>

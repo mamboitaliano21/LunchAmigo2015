@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="unimelb.mit.mobile.scavengerhunt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="unimelb.mit.mobile.scavengerhunt.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="unimelb.mit.mobile.scavengerhunt.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scavenger"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="unimelb.mit.mobile.scavengerhunt" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GcmIntentService" />
+
+        <activity
+            android:name=".ShakerActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ContactsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CreateMessage"
+            android:label="@string/title_activity_create_message" >
+        </activity>
+        <activity
+            android:name=".SearchMessage"
+            android:label="@string/title_activity_search_message"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SearchingMessage"
+            android:label="@string/title_activity_background" 
+            android:parentActivityName=".Inbox" >
+        
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".Inbox" />
+        </activity>
+        <activity
+            android:name=".Congratulations"
+            android:label="@string/title_activity_congratulations" 
+            android:parentActivityName=".Inbox" >
+        
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".Inbox" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDOC9xodiG5Kq97S7_Cg2ZA1IMCPmGvlz4" />
+
+        <activity
+            android:name=".UnreadMessages"
+            android:label="@string/title_activity_unread_messages" 
+            android:parentActivityName=".Inbox" >
+        
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".Inbox" />
+        </activity>
+        <activity
+            android:name=".Inbox"
+            android:label="@string/title_activity_inbox" 
+            android:parentActivityName=".MainActivity" >
+        
+	        <meta-data
+	            android:name="android.support.PARENT_ACTIVITY"
+	            android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewMessage"
+            android:label="@string/title_activity_view_message"
+            android:parentActivityName=".Inbox" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="unimelb.mit.mobile.scavengerhunt.Inbox" />
+        </activity>
+    </application>
+
+</manifest>

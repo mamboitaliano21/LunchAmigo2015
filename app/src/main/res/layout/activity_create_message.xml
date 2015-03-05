@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ViewStyleMain"
+    tools:context="unimelb.mit.mobile.scavengerhunt.CreateMessage" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout style="@style/LinearLayoutVerticalStandard" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                style="@style/LinearLayoutVerticalStandard"
+                android:paddingBottom="10dp" >
+
+                <EditText
+                    android:id="@+id/recipientUsernameText"
+                    style="@style/TextViewSmall"
+                    android:layout_gravity="center" />
+                
+                
+
+                <TextView
+                    android:id="@+id/Message"
+                    style="@style/TextViewLarge"
+                    android:text="Message" />
+
+                <EditText
+                    android:id="@+id/messageText"
+                    style="@style/EditTextStandard" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    style="@style/TextViewLarge"
+                    android:layout_weight="1"
+                    android:text="Location Hint 1" />
+
+                <EditText
+                    android:id="@+id/locHint1"
+                    style="@style/EditTextStandard"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textMultiLine" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    style="@style/TextViewLarge"
+                    android:layout_weight="1"
+                    android:text="Location Hint 2" />
+
+                <EditText
+                    android:id="@+id/locHint2"
+                    style="@style/EditTextStandard"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    style="@style/TextViewLarge"
+                    android:layout_weight="1"
+                    android:text="Location Hint 3" />
+
+                <EditText
+                    android:id="@+id/locHint3"
+                    style="@style/EditTextStandard"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView10"
+                        style="@style/TextViewLarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Latitude"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        style="@style/TextViewLarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Longitude" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshape"
+                android:paddingTop="3dp"
+                android:shadowColor="#A8A8A8" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:baselineAligned="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/msgLatitude"
+                        style="@style/TextViewLarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="111.2.4.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/msgLongitude"
+                        style="@style/TextViewLarge"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="1.2.4.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    style="@style/TextViewSmall"
+                    android:layout_width="225dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Now place your phone in the location you want the Hidden Message to stay and press Send" />
+
+                <Button
+                    android:id="@+id/angry_btn"
+                    style="@style/Button"
+                    android:layout_width="244dp"
+                    android:layout_height="60dp"
+                    android:text="Send"
+                    android:textColor="#E3E3E3"
+                    android:textSize="30sp"
+                    android:onClick="sendMessage" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scavenger Hunt!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_message">CreateMessage</string>
+    <string name="title_activity_shaker">ShakerActivity</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_message_list">Messages</string>
+    <string name="title_message_detail">Message Detail</string>
+    <string name="Msg1">This is a message for you, find me</string>
+    <string name="title_activity_background">Find the message!</string>
+    <string name="HintLabel1">Hint 1:</string>
+    <string name="HintLabel2">Hint 2:</string>
+    <string name="HintLabel3">Hint 3:</string>
+    <string name="HintText1" />
+    <string name="HintText2" />
+    <string name="HintText3" />
+    <string name="DistanceLabel">Status:</string>
+    <string name="DistanceText" />
+    <string name="getHintLabel">Get a Hint:</string>
+    <string name="title_activity_congratulations">Congratulations</string>
+    <string name="labelYourMessage">Your message from :</string>
+    <string name="title_activity_search_message">SearchMessage</string>
+    <string name="title_activity_messages_list">MessagesList</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_unread_messages">UnreadMessages</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="action_new_message">New Message</string>
+    <string name="title_activity_view_message">ViewMessage</string>
+    <string name="title_activity_view_messages">ViewMessages</string>
+
+</resources>

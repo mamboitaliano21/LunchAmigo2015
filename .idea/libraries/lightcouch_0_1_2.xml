@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lightcouch-0.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/lightcouch-0.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
